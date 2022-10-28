@@ -7,12 +7,12 @@
   align-items: center;
   justify-content: flex-start;
 }
-.nav ul {
+.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
 }
-.nav ul li a {
+.navbarLink {
   margin: 5px 15px;
 }
