@@ -1,8 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Register from './register.js';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from '../styles/Home.module.css';
+// import register from './register.js';
 import React, { useState } from 'react';
+import Button from '@mui/material/Button';
 
 export default function Home() {
   return (
@@ -11,7 +13,9 @@ export default function Home() {
         <title>Storkly</title>
         <meta name='keywords' content='web-development, programming' />
       </Head>
-      {/* <h1>Storkly</h1> */}
+      <Link href='/register'>
+        <Button variant="contained" size="large">Start Here</Button>
+      </Link>
     </div>
   )
 }
